@@ -3,7 +3,6 @@ let Path = require("path")
 
 module.exports = {
     entry: ['./src/index.jsx'],
-
     module: {
         rules: [
             {
