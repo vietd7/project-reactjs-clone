@@ -1,22 +1,21 @@
 {
-  "name": "cashout-cplus",
+  "name": "project-clone",
   "version": "1.0.0",
-  "description": "cashout-cplus",
-  "esversion": 6,
-  "config": {
-    "DEV_PORT": 6789
-  },
+  "description": "project-clone",
   "scripts": {
-    "test": "cross-conf-env cross-env PORT=npm_package_config_DEV_PORT NODE_ENV=development node build/conf/webpack-dev-server.js --hot",
-    "build:prod": "cross-env NODE_ENV=production webpack --config build/conf/webpack.config.js"
+    "test": "webpack-dev-server -d --config=./build/conf/webpack.config.js --hot",
+    "build:prod": "webpack -p --config=./build/conf/webpack.config.js"
   },
-  "repository": "",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vietd7/project-reactjs-clone.git"
+  },
   "keywords": [
     "node.js",
-    "eclipse",
-    "nodeclipse"
+    "reactjs",
+    "helloworld"
   ],
-  "author": "puppet team",
+  "author": "AnhTV",
   "license": "ISC",
   "readmeFilename": "README.md",
   "dependencies": {
@@ -26,21 +25,21 @@
     "babel-preset-react": "^6.24.1",
     "babel-preset-stage-2": "^6.24.1",
     "classnames": "^2.2.5",
+    "copy-webpack-plugin": "^4.2.0",
     "css-loader": "^0.28.7",
     "js-common-formatter": "^1.0.1",
     "nhb-popup-manager": "^3.0.17",
     "node-sass": "^4.5.3",
     "react": "^15.6.1",
-    "react-addons-css-transition-group": "^15.6.0",
+    "react-addons-update": "^15.6.0",
     "react-clipboard.js": "^1.1.2",
     "react-dom": "^15.6.1",
-    "react-recaptcha": "^2.3.2",
     "react-redux": "^5.0.5",
-    "react-sizeme": "^2.3.4",
     "redux": "^3.7.2",
     "redux-little-router": "^14.2.0",
     "redux-simple-websocket": "^1.0.3",
     "sass-loader": "^6.0.6",
+    "style-loader": "^0.18.2",
     "webpack": "^2.6.1"
   },
   "babel": {
@@ -51,9 +50,8 @@
     ]
   },
   "devDependencies": {
-    "babel-plugin-transform-object-rest-spread": "^6.23.0",
     "babel-polyfill": "^6.23.0",
-    "copy-webpack-plugin": "^4.0.1",
+ 
     "cross-conf-env": "^1.1.2",
     "cross-env": "^5.0.1",
     "react-hot-loader": "^3.0.0-",

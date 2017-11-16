@@ -1,9 +1,6 @@
 import React from "react";
 import {connect} from "react-redux"
 
-
-
-
 class Application extends React.Component {
     constructor(props) {
         super(props);
@@ -12,7 +9,7 @@ class Application extends React.Component {
     render() {
         return (
             <div>
-                abc
+                1234
             </div>
         )
     }
