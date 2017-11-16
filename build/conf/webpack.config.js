@@ -40,7 +40,9 @@ module.exports = {
     output: {
         path: Path.resolve("build/dist"),
         filename: "bundle.js",
-        publicPath: "/cashout-cplus/"
+        publicPath: "/cashout-cplus/",
+        library: 'shared-components',
+        libraryTarget: 'umd'
     },
     devServer: {
         // contentBase: './assets/',
@@ -49,7 +51,6 @@ module.exports = {
         publicPath: "/cashout-cplus/",
         hot: true,
         contentBase: "./assets",
-
         // historyApiFallback: true,
         //     stats: {
         //     colors: true,
