@@ -51,7 +51,7 @@
   },
   "devDependencies": {
     "babel-polyfill": "^6.23.0",
-     "cross-conf-env": "^1.1.2",
+    "cross-conf-env": "^1.1.2",
     "cross-env": "^5.0.1",
     "react-hot-loader": "^3.0.0-",
     "url-loader": "^0.5.9",
