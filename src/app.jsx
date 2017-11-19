@@ -7,7 +7,7 @@ class Application extends React.Component {
   }
 
   render() {
-    return (<div>
+        return (<div>
       1234
     </div>)
   }
