@@ -40,15 +40,14 @@ module.exports = {
     output: {
         path: Path.resolve("build/dist"),
         filename: "bundle.js",
-        publicPath: "/cashout-cplus/",
-        library: 'shared-components',
-        libraryTarget: 'umd'
+        publicPath: "/test/",
+
     },
     devServer: {
         // contentBase: './assets/',
         port: 7777,
         // hot: true
-        publicPath: "/cashout-cplus/",
+        publicPath: "/test/",
         hot: true,
         contentBase: "./assets",
         // historyApiFallback: true,
@@ -65,15 +64,7 @@ module.exports = {
                 to: "./"
             }
         ]
-        // , {
-        //     ignore: [// Doesn't copy any files with a txt extension
-        //         '*.txt'],
-        //
-        //     // By default, we only copy modified files during
-        //     // a watch or webpack-dev-server build. Setting this
-        //     // to `true` copies all files.
-        //     copyUnmodified: true
-        // }
+ 
         )],
     devtool: 'inline-source-map'
 

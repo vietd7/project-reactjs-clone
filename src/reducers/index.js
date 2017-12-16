@@ -21,7 +21,7 @@ const routes = {
     }
 }
 
-const router = routerForBrowser({routes, basename: '/cashout-cplus'});
+const router = routerForBrowser({routes, basename: '/cashout-cplus/'});
 
 const reducer = combineReducers({ utils, router: router.reducer});
 
