@@ -40,14 +40,14 @@ module.exports = {
     output: {
         path: Path.resolve("build/dist"),
         filename: "bundle.js",
-        publicPath: "/test/",
+        // publicPath: "/test/",
 
     },
     devServer: {
         // contentBase: './assets/',
         port: 7777,
-        // hot: true
-        publicPath: "/test/",
+
+        // publicPath: "/test/",
         hot: true,
         contentBase: "./assets",
         // historyApiFallback: true,
@@ -55,7 +55,7 @@ module.exports = {
         //     colors: true,
         //     chunks: false
         // },
-        // disableHostCheck: true,
+        disableHostCheck: true,
         // inline: true,
     },
     plugins: [new CopyWebpackPlugin([
@@ -64,8 +64,10 @@ module.exports = {
                 to: "./"
             }
         ]
- 
+
         )],
-    devtool: 'inline-source-map'
+        devtool: process.env.NODE_ENV
+            ? ""
+            : "inline-source-map"
 
 }
